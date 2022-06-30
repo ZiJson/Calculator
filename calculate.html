@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>網頁計算機  </title>
+
+        <link rel="stylesheet" href="cal.css">
+        <script src="cal.js">  </script>
+    </head>
+    <body>
+        <div class="cal">
+            <div class="display">
+                <div id="answer" class="answer">
+                請輸入...
+                </div>
+            </div>
+            <br>
+            <div class="board">
+                <div class="numbs">
+                    <button type="button" class="num_button" onclick="setvalue(1)">
+                        1
+                    </button>
+                    <button type="button" class="num_button" onclick="setvalue(2)">
+                        2
+                    </button>
+                    <button type="button" class="num_button" onclick="setvalue(3)">
+                        3
+                    </button>
+                    <button type="button" class="num_button" onclick="setvalue(4)">
+                        4
+                    </button>
+                    <button type="button" class="num_button" onclick="setvalue(5)">
+                        5
+                    </button>
+                    <button type="button" class="num_button" onclick="setvalue(6)">
+                      6
+                   </button>
+                   <button type="button" class="num_button" onclick="setvalue(7)">
+                        7
+                    </button>
+                    <button type="button" class="num_button" onclick="setvalue(8)">
+                       8
+                      </button>
+                     <button type="button" class="num_button" onclick="setvalue(9)">
+                       9
+                    </button>
+                    <button type="button" class="num_button" onclick="setvalue(0)">
+                       0
+                    </button>
+                    <button type="button" class="num_button" onclick="setdim()">
+                     .
+                    </button>
+                    <button type="button" class="num_button" onclick="getans()">
+                        =
+                    </button>
+                </div>
+                <div class="operators">
+                    <button type="button" class="ope_button" onclick="setoperation(0)">
+                     +
+                    </button>
+                    <button type="button" class="ope_button" onclick="setoperation(1)">
+                      -
+                   </button>
+                  <button type="button" class="ope_button" onclick="setoperation(2)">
+                     x
+                  </button>
+                    <button type="button" class="ope_button" onclick="setoperation(3)">
+                       /
+                  </button>
+                  
+                  <button type="button" class="ope_button" onclick="clean()">
+                      C
+                  </button>
+             </div>
+            
+            </div>
+        </div>
+        
+    </body>
+</html>
