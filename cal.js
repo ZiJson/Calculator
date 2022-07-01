@@ -37,7 +37,7 @@ function setvalue(x){
         else{
             A = adddim(A,x);
         }
-        if(A==0){
+        if(x==0){
             if(document.getElementById('answer').innerHTML == '請輸入...'){
                 document.getElementById('answer').innerHTML = '0';
             }
@@ -58,8 +58,14 @@ function setvalue(x){
         else{
             B = adddim(B,x);
         }
-        if(B==0){
-            document.getElementById('answer').innerHTML += '0';
+        if(x==0){
+            if(document.getElementById('answer').innerHTML == '請輸入...'){
+                document.getElementById('answer').innerHTML = '0';
+            }
+            else{
+                document.getElementById('answer').innerHTML += '0';
+            }
+            
         }
         else{
             document.getElementById('answer').innerHTML = B;
